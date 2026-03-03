@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose your Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif">
+    <style>
+        :root {
+            --primary: #fafafa;
+            --secondary: #555555;
+            --shadow-color: rgba(0, 0, 0, 0.295);
+            --text-color: rgb(202, 202, 202);
+            --white: #ffffff;
+            --accent1: rgb(110, 54, 54);
+            --accent2: rgb(54, 67, 110);
+        }
+
+        * {
+            text-align: center;
+        }
+
+        body {
+            background-color: var(--primary);
+        }
+
+        h2 {
+            font-family: "Noto Serif", serif;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin: auto;
+            background-color: var(--secondary);
+            width: fit-content;
+            padding: 10px;
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 15px;
+            font-family: "Noto Serif", serif;
+            text-decoration: none;
+            box-shadow: 10px 15px 25px var(--shadow-color);
+            color: var(--text-color)
+        }
+
+        li {
+            margin: 20px;
+        }
+
+        a {
+            color: var(--text-color);
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 1000px;
+            transition: all 0.2s;
+        }
+
+        a:hover {
+            color: var(--white);
+            background-color: var(--accent1);
+            text-decoration: none;
+        }
+
+        a.blue:hover {
+            color: var(--white);
+            background-color: var(--accent2);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Pick your page:</h2>
+    <ul>
+        <li><a href="js06a_txt.html">Loopback (js06a)</a></li>
+        <li><a href="js06b_txt.html" class="blue">Loopback but blue ()</a></li>
+    </ul>
+</body>
+
+</html>
